@@ -1,0 +1,99 @@
+<form>
+ <fieldset>
+  <legend>Personalia:</legend>
+  Name: <input type="text"><br>
+  Email: <input type="text"><br>
+  Date of birth: <input type="text">
+ </fieldset>
+</form>
+
+
+
+<em>Emphasized text</em><br>
+<strong>Strong text</strong><br>
+<code>A piece of computer code</code><br>
+<samp>Sample output from a computer program</samp><br>
+<kbd>Keyboard input</kbd><br>
+<var>Variable</var>
+
+<figure>
+  <img src="img_pulpit.jpg" alt="The Pulpit Rock" width="304" height="228">
+  <figcaption>Fig.1 - A view of the pulpit rock in Norway.</figcaption>
+</figure>
+
+
+<frameset cols="25%,*,25%">
+  <frame src="frame_a.htm">
+  <frame src="frame_b.htm">
+  <frame src="frame_c.htm">
+</frameset>
+
+
+<iframe src="https://www.w3schools.com">
+  <p>Your browser does not support iframes.</p>
+</iframe>
+
+
+	<div id="contianer">
+	<div id='margin-right'>
+		<div id="adv">
+			  <details>
+			  <summary><b>Advertisments .. </b></summary>
+			  <p> - by Refsnes Data. All Rights Reserved.</p>
+			  <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+			</details>
+		</div>
+	</div>
+	<div id='margin-left'>
+		<div id="adv">
+			  <details>
+			  <summary><b>Advertisments .. </b></summary>
+			  <p> - by Refsnes Data. All Rights Reserved.</p>
+			  <p>All content and graphics on this web site are the property of the company Refsnes Data.</p>
+			</details>
+		</div>
+	</div>
+
+
+	<main id="Aarticles">
+	  <h1>Web Browsers</h1>
+	  <p>Google Chrome, Firefox, and Internet Explorer are the most used browsers today.</p>
+		<ul id="Aarticles">
+		 <li><article>
+		    <h1>Google Chrome</h1>
+		    <p>Google Chrome is a free, open-source web browser developed by Google, released in 2008.</p>
+		  </article></li>
+
+		 <li><article>
+		    <h1>Internet Explorer</h1>
+		    <p>Internet Explorer is a free web browser from Microsoft, released in 1995.</p>
+		 </article></li>
+
+		 <li><article>
+		    <h1>Mozilla Firefox</h1>
+		    <p>Firefox is a free, open-source web browser from Mozilla, released in 2004.</p>
+		  </article></li>
+		</ul>
+	</main>	
+	</div>
+
+
+
+
+
+I just add data-content-value to the span :
+
+<label class="file col-sm-offset-2 col-sm-10">
+    <input type="file" id="form_profilePicture" name="form[profilePicture]">
+    <span class="file-custom" data-content-value="Choose file..."></span>
+</label>
+Then I change the .file-custom::after into _custom-forms.scss like this :
+
+.file-custom::after {
+    content: attr(data-content-value);
+}
+And then, I just add these jQuery lines to make it work with all the input[type="file"] on the page :
+
+$('input[type="file"]').on('change', function() {
+    $(this).next('.file-custom').attr('data-content-value', $(this)[0].files[0].name);
+});

@@ -1,0 +1,67 @@
+body{text-align: center;padding:0px;margin:0px;font-family: arial;font-size: 17px;background-color:#f5f5ef;}
+a{text-decoration: none;} 
+a:active {color:red;} 
+a:visited {color:blue;} 
+a:link{color:blue;}
+figcaption{font-size: 13px; color: blue;}
+article{margin-top: 10px;  }
+fieldset{border-radius: 10px; background-color: white;}
+td{text-align: left;padding: 2px;}
+table{ margin: 100px auto;}
+ul{ list-style-type: none;}
+
+.contianer{height:100%;width:100%;margin-bottom:20px;clear:left;}
+#title {margin-top:10px;letter-spacing:5px;font-size:18px;color:#809fff;font-weight: bolder;}
+ul.main-nav{margin:0px;padding-right:10px ;overflow: hidden;background-color: #333;}
+ul.main-nav li.left{float: left;padding: 0px;margin:0px;}
+ul.main-nav li.right{float: right;padding: 0px;margin:0px;}
+ul.main-nav li a{display:block;padding: 14px 16px;font-size: 20px;color: white;text-align: center;}
+ul.main-nav li a:hover{background-color: #111 ;}
+ul.main-nav li input{margin-top:10px;padding: 3px; height: 18px;min-width: 200px;width:300px; }
+ul.main-nav li button{height:28px;margin-top:10px ;padding: 5px;border-bottom:1px silver solid;}
+
+#mainbox{padding: 20px;}
+#img-nav-side{float:left;height:30px; width:30px;margin: 15px 16px;}
+div.clean{clear: left;clear: right;}
+.adv{float:left;max-width: 20%;text-align:center;}
+.adv img:hover{width: 80px;height: 80px; border-radius: 25px;}
+main.artiles{;text-align:center;float: left ;border-left:3px silver solid;border-left-style: double;padding: 10px;}
+main.artiles img {border:4px silver solid;border-radius:15px;border-style: double;}
+main.artiles img:hover{width:290px;}
+.freeAccount{margin-top:80px;margin-bottom:-180px;cursor:pointer;}
+.signUp td{opacity: 0;}
+
+#article-title{padding:2px;color: #000080 ; border:1px silver double;border-bottom: 0px;border-radius: 20px;}
+#showSuggestions {width: 100%;}
+#showSuggestions ul{list-style: none;}
+#showSuggestions ul li{border-radius: 25px; padding:0px;margin-top:5px;border-top:4px silver solid;max-height: 30px ;background-color: #a1a5aa; }
+#showSuggestions ul li a{border-radius: 25px;display:block;padding:10px 10px;font-size:15px;color:white;text-align:center;}
+#showSuggestions ul li a:hover{background-color: #2db300 ;}
+
+div.person-box{margin-left:10px;padding:0px;width:100%;}
+
+div.user_inf{background-color: gray; float:left;display:inline-block;margin:0px;padding:0px;width:70%;height:330px;}
+
+div.cover{position:relative;left:0%;top:0%;height:330px;} 
+div.cover img.background{height:100%;border-bottom-right-radius:10px;border-bottom-left-radius:10px;width:100%;}
+div.cover img.changeCover{border-radius:20px;height: 30px;width:30px;padding:0px;position:relative;left:46%;top:-300px;}
+
+div.profile{position:relative;left:2%;top:-170px;width:120px;height:180px;} 
+div.profile img.picProfile{height:160px;width:120px;border-radius: 15px;}
+div.profile img.changeProfile{height:30px;width:30px;border-radius:20px;position:relative;left:45px;top:-35px;}
+
+div.info-person{border-bottom-left-radius:10px;background-image:url("../img/info-personal.jpg"); background-size:100% 100%;background-repeat: no-repeat;float:right;display:inline-block;;margin:0px;padding:5px;width:28%;height:320px;}
+
+.contain{width:65%;overflow:hidden;margin:auto;}
+.contain img.admin{ width:20%;height:auto;margin:auto;border-radius: 25px;margin-bottom: 20px;margin-top:25px;}
+.contain img.head{ width:100%;height:auto;margin:auto;margin-bottom: 50px;margin-top:10px;}
+
+ul.data{ text-align:center;padding: 0px;margin: 0px;}
+ul.data li{text-align:center;padding:3px;margin:auto;margin-bottom: 10px;border : 1px blue solid;background-color: lightblue;width: 60%;height: auto;}
+
+footer{margin:auto; clear:left;border-bottom:4px silver solid;border-radius:10px;width:90%;text-align:center;color:green;font-size:15px;}
+footer a{ text-decoration: none;}	
+
+.maxWidth{width: 100%;}
+.normalWidth{width: 75%;}
+.rolling{opacity: 0px;}

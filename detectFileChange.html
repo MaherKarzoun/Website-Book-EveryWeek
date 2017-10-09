@@ -1,0 +1,35 @@
+<!--
+I just add data-content-value to the span :
+
+Then I change the .file-custom::after into _custom-forms.scss like this :
+
+
+And then, I just add these jQuery lines to make it work with all the input[type="file"] on the page :
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	.file-custom:after{
+    content: attr(data-content-value);
+}
+</style>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+</head>
+<body>
+	    <input type="file" id="form_profilePicture" name="form[profilePicture]"><br/>
+	    <span class="file-custom" data-content-value="Choose file..."></span>
+</body>
+</html>
+
+<script >
+$(document).ready(function() {
+	$("input[type='file']").change().next(function() { console.log("i ve changed") ; });
+   	
+});
+</script>
